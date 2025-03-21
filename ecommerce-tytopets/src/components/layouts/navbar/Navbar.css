@@ -1,6 +1,10 @@
 .title{
 color: blueviolet;
 display: flex;
-gap:35px;
+gap:30px;
+padding: 10px;
+align-items: center;
 flex-direction: row;
+justify-content: space-between;
+background-color:azure;
 }
