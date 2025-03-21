@@ -1,11 +1,19 @@
+import { Footer } from "./components/layouts/footer/Footer";
+import { Navbar } from "./components/layouts/navbar/Navbar";
+
+
+
 
 function App() {
 
   return (
-    <>
-    <h1>Hola Mundo</h1>
-    </>
-  )
+
+<div>
+  <Navbar/>
+  <Footer/>
+</div>
+
+  );
 }
 
 export default App

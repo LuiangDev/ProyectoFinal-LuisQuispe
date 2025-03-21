@@ -1,3 +1,7 @@
-export default function ProductCard() {
-  return <div>ProductCard</div>;
+import React from 'react'
+
+export const ProductCard = () => {
+  return (
+    <div>ProductCard</div>
+  )
 }
