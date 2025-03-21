@@ -1,8 +1,8 @@
-
+import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div>
+    <div className="titlefooter">
       <h2>Mis Redes Sociales</h2>
     </div>
   )
