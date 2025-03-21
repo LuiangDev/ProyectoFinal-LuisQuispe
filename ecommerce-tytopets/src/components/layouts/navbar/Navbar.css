@@ -1,3 +1,6 @@
 .title{
 color: blueviolet;
+display: flex;
+gap:35px;
+flex-direction: row;
 }

@@ -4,9 +4,9 @@ import "./Navbar.css";
 export const Navbar = () => {
   return (
     <div className="title">
-      <nav >
+      <nav className="title">
         <h2>Mi Tienda</h2>
-        <ul >
+        <ul className="title">
           <li>Categoria 1</li>
           <li>Categoria 2</li>
           <li>Categoria 3</li>

@@ -3,7 +3,7 @@ import { MdShoppingCart } from "react-icons/md";
 
 export const CartWidget = () => {
   return (
-    <div>
+    <div style={{display:'flex',flexDirection:'row'}}>
       <MdShoppingCart />
       <p>Cantidad 1</p>
     </div>
