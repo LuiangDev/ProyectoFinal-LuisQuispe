@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { products } from "../../../products";
 import { useParams } from "react-router";
+import Counter from "../../common/counter/Counter";
 
 const ItemDetail = () => {
   const [item, setItem] = useState({});
@@ -17,6 +18,7 @@ const ItemDetail = () => {
     <div>
       <h1>{item.title}</h1>
       <img src={item.imageUrl} alt="" />
+      <Counter item={item} />
     </div>
   );
 };
