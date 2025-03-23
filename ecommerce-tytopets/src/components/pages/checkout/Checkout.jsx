@@ -1,4 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { db } from "../../../firebaseConfig";
+import { collection, addDoc, updateDoc,doc } from "firebase/firestore";
+import { CartContext } from "../../../context/CartContext";
+
 
 const Checkout = () => {
   const [userInfo, setUserInfo] = useState({
@@ -7,9 +11,31 @@ const Checkout = () => {
     telefono: "",
   });
 
+const {cart, getTotalAmount, resetCart} = useContext(CartContext);
+const [orderId, setOrderId] = useState(null);
+
   const funcionFormulario = (evento) => {
     evento.preventDefault();
-    console.log(userInfo);
+    let total = getTotalAmount();
+    let ordersCollection = collection(db, "orders");
+    let order = {
+      buyer: userInfo,
+      items: cart,
+      total,
+    };
+    
+    let promesaCompra=addDoc(ordersCollection, order);
+    promesaCompra.then((res)=>{
+      setOrderId(res.id);
+      resetCart();
+    });
+
+    let productsCollection = collection(db, "products");
+
+    order.items.forEach((elemento) => {
+      let refDoc=doc(productsCollection, elemento.id);
+      updateDoc(refDoc, {stock: elemento.stock - elemento.quantity});
+    });
   };
 
   const funcionInputs = (evento) => {
@@ -19,6 +45,9 @@ const Checkout = () => {
 
   return (
     <div>
+      {orderId ? (
+        <h2>Tu numero de compra es: {orderId}</h2>
+      ):(
       <form onSubmit={funcionFormulario}>
         <input
           type="text"
@@ -41,6 +70,7 @@ const Checkout = () => {
         <button>Enviar</button>
         <button type="button">cancelar</button>
       </form>
+      )}
     </div>
   );
 };

@@ -51,7 +51,14 @@ export const CartContextProvider = ({ children }) => {
     return total;
   };
 
-  let data = { cart, addToCart, resetCart, removeById, getTotalAmount, getTotalQuantity };
+  let data = {
+    cart,
+    addToCart,
+    resetCart,
+    removeById,
+    getTotalAmount,
+    getTotalQuantity,
+  };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

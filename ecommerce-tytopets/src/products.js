@@ -1,7 +1,7 @@
 export const products = [
   // Categoría: Alimentos
   {
-    id: "01",
+    //id: "01",
     title: "Croquetas para perro",
     price: 25.99,
     stock: 100,
@@ -12,7 +12,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702994/58b6fe044ff0733b136c6593f827be35_mn26qi.jpg",
   },
   {
-    id: "02",
+    //id: "02",
     title: "Croquetas para gato",
     price: 22.99,
     stock: 100,
@@ -23,7 +23,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742703048/b8e8a16d701b7bc6da494f9a05cd185f_dxg6jv.jpg",
   },
   {
-    id: "03",
+    //id: "03",
     title: "Snacks para perro",
     price: 8.99,
     stock: 100,
@@ -33,7 +33,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742703090/026d75d139fa2646610728da62cf9619_wpc4ph.jpg",
   },
   {
-    id: "04",
+    //id: "04",
     title: "Snacks para gato",
     price: 7.99,
     stock: 100,
@@ -45,7 +45,7 @@ export const products = [
 
   // Categoría: Accesorios
   {
-    id: "05",
+    //id: "05",
     title: "Collar para perro",
     price: 12.99,
     stock: 50,
@@ -55,7 +55,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702734/2dda19d35801e84f324f32ad2b500d1e_swba57.jpg",
   },
   {
-    id: "06",
+    //id: "06",
     title: "Collar para gato",
     price: 10.99,
     stock: 50,
@@ -65,7 +65,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702784/f5597fb99254e599ad84728374b3dc3c_easrb3.jpg",
   },
   {
-    id: "07",
+    //id: "07",
     title: "Correa para perro",
     price: 15.99,
     stock: 50,
@@ -75,7 +75,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702834/6c2705e55678c259678d024ad2726121_yvnfbu.jpg",
   },
   {
-    id: "08",
+    //id: "08",
     title: "Juguete mordedor",
     price: 9.99,
     stock: 50,
@@ -87,7 +87,7 @@ export const products = [
 
   // Categoría: Higiene
   {
-    id: "09",
+    //id: "09",
     title: "Arena para gatos",
     price: 18.99,
     stock: 70,
@@ -97,7 +97,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702225/f4282cd13a3c76ab8dc9ce73c707b364_d5xbj8.jpg",
   },
   {
-    id: "10",
+    //id: "10",
     title: "Shampoo para perros",
     price: 14.99,
     stock: 70,
@@ -107,7 +107,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702376/b02ac64f009ca4655043c25b81c5e6d3_k36laf.jpg",
   },
   {
-    id: "11",
+    //id: "11",
     title: "Toallitas húmedas",
     price: 8.99,
     stock: 70,
@@ -117,7 +117,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702425/cc0576f964dc68ba162ded024546ad5b_rgbqcc.jpg",
   },
   {
-    id: "12",
+    //id: "12",
     title: "Cortaúñas para mascotas",
     price: 11.99,
     stock: 70,
@@ -129,7 +129,7 @@ export const products = [
 
   // Categoría: Camas y Transportadoras
   {
-    id: "13",
+    //id: "13",
     title: "Cama para perro",
     price: 29.99,
     stock: 40,
@@ -139,7 +139,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742701935/98c0c307784f84af12d9c589a8ed9cbb_hcvpar.jpg",
   },
   {
-    id: "14",
+    //id: "14",
     title: "Cama para gato",
     price: 24.99,
     stock: 40,
@@ -149,7 +149,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702045/29ef71f5ff4b42219771ca0c35915f84_wclvdp.jpg",
   },
   {
-    id: "15",
+    //id: "15",
     title: "Transportadora para perro",
     price: 39.99,
     stock: 40,
@@ -160,7 +160,7 @@ export const products = [
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702098/f416c3a335045161b9c6df1ebfcda195_l8xugn.jpg",
   },
   {
-    id: "16",
+    //id: "16",
     title: "Transportadora para gato",
     price: 34.99,
     stock: 40,
