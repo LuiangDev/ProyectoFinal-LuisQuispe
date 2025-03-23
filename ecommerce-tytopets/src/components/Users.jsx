@@ -6,7 +6,7 @@ const Users = () => {
     data: usuarios,
     isLoading,
     error,
-  } = useFetch("https://jsonplaceholder.org/users");
+  } = useFetch("https://jsonplaceholder.typicode.com/users");
 
   return (
     <div>

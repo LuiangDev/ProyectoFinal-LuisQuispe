@@ -6,7 +6,7 @@ const Comments = () => {
     data: comentarios,
     isLoading,
     error,
-  } = useFetch("https://jsonplaceholder.org/comments");
+  } = useFetch("https://jsonplaceholder.typicode.com/comments");
   console.log(isLoading);
   return (
     <div>
