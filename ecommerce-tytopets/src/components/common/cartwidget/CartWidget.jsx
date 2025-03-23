@@ -1,11 +1,12 @@
 import React from 'react'
 import { MdShoppingCart } from "react-icons/md";
+import "./cartWidget.css";
 
 export const CartWidget = () => {
   return (
-    <div style={{display:'flex',flexDirection:'row'}}>
+    <div className='formato'>
       <MdShoppingCart />
-      <p>Cantidad 1</p>
+      <p className='formato'>Cantidad 1</p>
     </div>
   )
 }

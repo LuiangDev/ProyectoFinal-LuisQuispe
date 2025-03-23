@@ -1,0 +1,6 @@
+.formato{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}

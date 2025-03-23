@@ -134,7 +134,7 @@ export const products = [
     price: 29.99,
     stock: 40,
     description: "Cama acolchonada para perros de tamaño mediano.",
-    category: "Camas y Transportadoras",
+    category: "CamasyTransportadoras",
     imageUrl:
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742701935/98c0c307784f84af12d9c589a8ed9cbb_hcvpar.jpg",
   },
@@ -144,7 +144,7 @@ export const products = [
     price: 24.99,
     stock: 40,
     description: "Cama suave y confortable para gatos.",
-    category: "Camas y Transportadoras",
+    category: "CamasyTransportadoras",
     imageUrl:
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702045/29ef71f5ff4b42219771ca0c35915f84_wclvdp.jpg",
   },
@@ -155,7 +155,7 @@ export const products = [
     stock: 40,
     description:
       "Transportadora de plástico resistente con ventilación lateral.",
-    category: "Camas y Transportadoras",
+    category: "CamasyTransportadoras",
     imageUrl:
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702098/f416c3a335045161b9c6df1ebfcda195_l8xugn.jpg",
   },
@@ -165,7 +165,7 @@ export const products = [
     price: 34.99,
     stock: 40,
     description: "Transportadora portátil con puerta segura para gatos.",
-    category: "Camas y Transportadoras",
+    category: "CamasyTransportadoras",
     imageUrl:
       "https://res.cloudinary.com/dw9nir0q9/image/upload/v1742702152/a2b2d95c8ecf6f378509e38862e4586e_x1ycps.jpg",
   },
