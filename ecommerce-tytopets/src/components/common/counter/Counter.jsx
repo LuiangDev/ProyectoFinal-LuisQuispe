@@ -25,9 +25,9 @@ const Counter = ({ item }) => {
 
   return (
     <div>
-      <button onClick={restar}>restar</button>
+      <button onClick={restar}>-</button>
       <h2>{contador}</h2>
-      <button onClick={sumar}>Sumar</button>
+      <button onClick={sumar}>+</button>
       <button onClick={onAdd}>Agregar al carrito</button>
     </div>
   );

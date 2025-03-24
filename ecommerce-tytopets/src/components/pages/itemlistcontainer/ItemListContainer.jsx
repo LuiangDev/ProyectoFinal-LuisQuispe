@@ -26,17 +26,9 @@ setItems(nuevoArray);
 .catch((error)=>console.log(error));
   }, [name]);
 
-// const cargar=()=>{
-// let refCollection = collection(db, "products");
-// products.forEach((product) => {
-//   addDoc(refCollection, product)
-// })
-// };
-
   return (
     <section>
-      {/* <button onClick={cargar}>Cargar productos</button> */}
-      <h2>Mis productos</h2>
+      <h2>Listado de productos</h2>
       {items.map((item) => {
         return <ProductCard key={item.id} item={item} />;
       })}

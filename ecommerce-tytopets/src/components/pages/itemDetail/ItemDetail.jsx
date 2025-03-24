@@ -24,7 +24,7 @@ const ItemDetail = () => {
   return (
     <div>
       <h1>{item.title}</h1>
-      <img src={item.imageUrl} alt="" />
+      <img src={item.imageUrl} alt="" style={{width:400}}/>
       <Counter item={item} />
     </div>
   );
