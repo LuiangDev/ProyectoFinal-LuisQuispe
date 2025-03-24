@@ -1,6 +1,6 @@
 # TyTo Pets - E-commerce de Productos para Mascotas
 
-![TyTo Pets Logo](https://via.placeholder.com/150)
+<!-- ![TyTo Pets Logo](https://via.placeholder.com/150) -->
 
 ## 🐶 Sobre TyTo Pets
 
