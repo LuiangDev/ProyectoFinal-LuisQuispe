@@ -27,11 +27,14 @@ setItems(nuevoArray);
   }, [name]);
 
   return (
-    <section>
-      <h2>Listado de productos</h2>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <h2>Listado de productos</h2>
+    <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "20px" }}>
+
       {items.map((item) => {
         return <ProductCard key={item.id} item={item} />;
       })}
     </section>
+    </div>
   );
 };

@@ -44,11 +44,11 @@ const [orderId, setOrderId] = useState(null);
   };
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", padding: "20px" }}>
       {orderId ? (
         <h2>Tu numero de compra es: {orderId}</h2>
       ):(
-      <form onSubmit={funcionFormulario}>
+      <form  style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "20px"}} onSubmit={funcionFormulario}>
         <input
           type="text"
           placeholder="nombre"
@@ -67,8 +67,8 @@ const [orderId, setOrderId] = useState(null);
           name="telefono"
           onChange={funcionInputs}
         />
-        <button>Enviar</button>
-        <button type="button">cancelar</button>
+        <button style={{padding:"3px"}} >Enviar</button>
+        <button style={{padding:"3px"}} type="button">cancelar</button>
       </form>
       )}
     </div>

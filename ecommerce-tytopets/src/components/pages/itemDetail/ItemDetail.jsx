@@ -22,7 +22,7 @@ const ItemDetail = () => {
   }, [id]);
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", padding: "20px" }}>
       <h1>{item.title}</h1>
       <img src={item.imageUrl} alt="" style={{width:400}}/>
       <Counter item={item} />
