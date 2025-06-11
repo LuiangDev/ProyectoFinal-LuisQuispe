@@ -38,3 +38,10 @@ TyTo Pets es un e-commerce especializado en la venta de productos para mascotas,
 ---
 
 🚀 **TyTo Pets - Porque tu mascota merece lo mejor.**
+
+#
+**Luis Angel Quispe Navarro**  
+Desarrollador Front-End | Ingeniero de Sistemas Computacionales | Diseñador UI  
+✉️ angel.quispe.navarro@outlook.com  
+[![GitHub](https://img.shields.io/badge/GitHub-LuiangDev-181717?style=for-the-badge&logo=github)](https://github.com/LuiangDev)  
+📌 Lima, Perú
