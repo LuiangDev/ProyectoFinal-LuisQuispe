@@ -1,9 +1,0 @@
-.container-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid black;
-  }
