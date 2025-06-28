@@ -28,7 +28,7 @@ setItems(nuevoArray);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-    <h2>Listado de productos</h2>
+    <h2 className="font-bold text-xl my-4">Listado de productos</h2>
     <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "20px" }}>
 
       {items.map((item) => {
