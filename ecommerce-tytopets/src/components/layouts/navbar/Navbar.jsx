@@ -6,7 +6,7 @@ export const Navbar = () => {
     <div>
       <nav className="bg-yellow-500 text-white flex justify-between items-center p-4">
       <Link to="/">TyTo Pets </Link>
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 text-lg font-semibold">
           <Link to="/category/Alimentos"><li>Alimentos</li></Link>
           <Link to="/category/Accesorios"><li>Accesorios</li></Link>
           <Link to="/category/Higiene"><li>Higiene</li></Link>
