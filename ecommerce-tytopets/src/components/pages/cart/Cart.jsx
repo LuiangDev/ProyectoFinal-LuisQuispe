@@ -13,7 +13,7 @@ export const Cart = () => {
   return (
 
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", padding: "20px" }}>
-      <h1>Resumen de Compra</h1>
+      <h1 className="text-xl font-medium">Resumen de Compra</h1>
       <div>
         {cart.map((product) => {
           return (

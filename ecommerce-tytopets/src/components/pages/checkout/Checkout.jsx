@@ -46,7 +46,7 @@ const [orderId, setOrderId] = useState(null);
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", padding: "20px" }}>
       {orderId ? (
-        <h2>Tu numero de compra es: {orderId}</h2>
+        <h2 className="text-xl font-medium">Tu numero de compra es: {orderId}</h2>
       ):(
       <form  style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "20px"}} onSubmit={funcionFormulario}>
         <input
