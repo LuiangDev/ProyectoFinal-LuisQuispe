@@ -25,10 +25,10 @@ const Counter = ({ item }) => {
 
   return (
     <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px", padding: "20px" }}>
-      <button style={{padding:"3px"}} onClick={restar}>-</button>
+      <button className=" text-2xl cursor-pointer" style={{padding:"3px"}} onClick={restar}>-</button>
       <h2 className="font-semibold">{contador}</h2>
-      <button style={{padding:"3px"}} onClick={sumar}>+</button>
-      <button className="font-semibold" style={{padding:"3px"}} onClick={onAdd}>Agregar al carrito</button>
+      <button className=" text-2xl cursor-pointer" style={{padding:"3px"}} onClick={sumar}>+</button>
+      <button className="font-semibold cursor-pointer bg-amber-400 text-white rounded-xl" style={{padding:"8px"}} onClick={onAdd}>Agregar al carrito</button>
     </div>
   );
 };
