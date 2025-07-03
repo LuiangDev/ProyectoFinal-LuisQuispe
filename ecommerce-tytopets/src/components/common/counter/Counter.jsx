@@ -26,9 +26,9 @@ const Counter = ({ item }) => {
   return (
     <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px", padding: "20px" }}>
       <button style={{padding:"3px"}} onClick={restar}>-</button>
-      <h2>{contador}</h2>
+      <h2 className="font-semibold">{contador}</h2>
       <button style={{padding:"3px"}} onClick={sumar}>+</button>
-      <button style={{padding:"3px"}} onClick={onAdd}>Agregar al carrito</button>
+      <button className="font-semibold" style={{padding:"3px"}} onClick={onAdd}>Agregar al carrito</button>
     </div>
   );
 };
