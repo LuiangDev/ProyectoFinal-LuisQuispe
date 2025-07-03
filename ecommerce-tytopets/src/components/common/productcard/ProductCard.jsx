@@ -7,7 +7,7 @@ export const ProductCard = ({ item }) => {
       <img style={{ width: "100px" }} src={item.imageUrl} alt={item.title} />
       <h3> {item.title} </h3>
       <h3> {item.price} </h3>
-      <Link to={`/itemdetail/${item.id}`}>Ver detalle</Link>
+      <Link className="text-cyan-700" to={`/itemdetail/${item.id}`}>Ver detalle</Link>
     </div>
   );
 };

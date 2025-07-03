@@ -23,8 +23,8 @@ const ItemDetail = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", padding: "20px" }}>
-      <h1 className="text-md gap-4 py-4" >{item.title}</h1>
-      <img src={item.imageUrl} alt="" style={{width:400}}/>
+      <h1 className="text-2xl text-cyan-700 font-semibold gap-4 py-4" >{item.title}</h1>
+      <img src={item.imageUrl} alt="" style={{width:300}}/>
       <Counter item={item} />
     </div>
   );
