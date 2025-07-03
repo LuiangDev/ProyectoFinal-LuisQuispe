@@ -1,9 +1,18 @@
 .container-card {
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    height: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
     width: 200px;
     flex-direction: column;
     gap: 10px;
     border: 1px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #f8f8f8;
   }
