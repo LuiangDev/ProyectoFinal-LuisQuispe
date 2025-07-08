@@ -27,9 +27,9 @@ setItems(nuevoArray);
   }, [name]);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div className="flex flex-col items-center justify-center py-4">
     <h2 className="font-bold text-2xl text-cyan-700 my-4">Listado de productos</h2>
-    <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "20px" }}>
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 px-2">
 
       {items.map((item) => {
         return <ProductCard key={item.id} item={item} />;
