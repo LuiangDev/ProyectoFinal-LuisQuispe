@@ -1,15 +1,14 @@
-import { useContext } from 'react'
+import { useContext } from "react";
 import { MdShoppingCart } from "react-icons/md";
-import "./cartWidget.css";
-import { CartContext } from '../../../context/CartContext';
+import { CartContext } from "../../../context/CartContext";
 
 export const CartWidget = () => {
-  const { getTotalQuantity } = useContext(CartContext)
-  let total = getTotalQuantity()
+  const { getTotalQuantity } = useContext(CartContext);
+  let total = getTotalQuantity();
   return (
-    <div className='formato'>
+    <div className="flex flex-row items-center justify-center gap-1 bg-sky-900 text-white p-2 rounded-full">
       <MdShoppingCart />
       <h3>{total}</h3>
     </div>
-  )
-}
+  );
+};
