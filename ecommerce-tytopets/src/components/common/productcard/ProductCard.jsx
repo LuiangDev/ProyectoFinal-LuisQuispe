@@ -1,4 +1,3 @@
-import "./productcard.css";
 import { Link } from "react-router";
 
 export const ProductCard = ({ item }) => {
