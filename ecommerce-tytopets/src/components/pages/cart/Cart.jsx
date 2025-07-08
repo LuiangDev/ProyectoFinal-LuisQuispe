@@ -12,8 +12,8 @@ export const Cart = () => {
 
   return (
 
-    <div className="flex flex-col items-center justify-center gap-4 p-4">
-      <h1 className="text-xl font-medium">Resumen de Compra</h1>
+    <div className="flex flex-col items-center justify-center gap-4 p-4 mx-auto my-4 bg-white rounded-lg shadow-md max-w-2xl">
+      <h1 className="text-xl font-bold">Resumen de Compra</h1>
       <div>
         {cart.map((product) => {
           return (
@@ -22,13 +22,13 @@ export const Cart = () => {
         <h2>{product.title}</h2>
         <h3>${product.price}</h3>
         <h3>x{product.quantity}</h3>
-        <button className="px-6 py-1 ml-6 bg-sky-900 text-white font-semibold rounded-2xl" onClick={() => removeById(product.id)}>Eliminar</button>
+        <button className="px-6 py-1 ml-6 bg-sky-900 cursor-pointer text-white font-semibold rounded-2xl" onClick={() => removeById(product.id)}>Eliminar</button>
       </div>
       );
       })}
       </div>
       <h2>El Precio Total a pagar es: ${total.toFixed(2)}</h2>
-      <button className="px-6 py-1 ml-6 bg-sky-900 text-white font-semibold rounded-2xl" onClick={resetCart}>Vaciar Carrito</button>
+      <button className="px-6 py-1 ml-6 bg-sky-900 text-white font-semibold rounded-2xl cursor-pointer" onClick={resetCart}>Vaciar Carrito</button>
       <Link to="/checkout" className="px-6 py-1 ml-6 bg-sky-900 text-white font-semibold rounded-2xl">Finalizar la Compra</Link>
       </div>
 
