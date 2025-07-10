@@ -1,18 +1,65 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import { CartWidget } from "../../common/cartwidget/CartWidget";
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="sticky top-0 z-50">
-      <nav className="bg-yellow-500 text-white flex justify-between items-center p-4 shadow-md">
-        <Link className="font-bold text-xl" to="/">TyTo Pets</Link>
-        <ul className="flex gap-4 text-base font-medium">
-          <Link to="/category/Alimentos"><li>Alimentos</li></Link>
-          <Link to="/category/Accesorios"><li>Accesorios</li></Link>
-          <Link to="/category/Higiene"><li>Higiene</li></Link>
-          <Link to="/category/CamasyTransportadoras"><li>Camas y Transportadoras</li></Link>
-        </ul>
-        <Link to="/cart"><CartWidget /></Link>
+      <nav className="bg-yellow-500 text-white p-4 shadow-md">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <Link className="font-bold text-xl" to="/">
+            TyTo Pets
+          </Link>
+
+          {/* Menú Hamburguesa (mobile) */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white text-2xl focus:outline-none cursor-pointer"
+              aria-label="Menú"
+            >
+              {isOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+            </button>
+          </div>
+
+          {/* Carrito visible solo en desktop */}
+          <Link to="/cart" className="md:block hidden">
+            <CartWidget />
+          </Link>
+        </div>
+
+        {/* Opciones del menú */}
+        <div
+          className={`mt-4 md:mt-0 ${
+            isOpen ? "flex" : "hidden"
+          } md:flex md:justify-center`}
+        >
+          <ul className="flex flex-col md:flex-row gap-4 font-medium text-base md:items-center">
+            <Link to="/category/Alimentos">
+              <li>Alimentos</li>
+            </Link>
+            <Link to="/category/Accesorios">
+              <li>Accesorios</li>
+            </Link>
+            <Link to="/category/Higiene">
+              <li>Higiene</li>
+            </Link>
+            <Link to="/category/CamasyTransportadoras">
+              <li>Camas y Transportadoras</li>
+            </Link>
+
+            <div className="flex items-center gap-4 w-full justify-center md:justify-end">
+              {/* Carrito en mobile */}
+              <Link to="/cart" className="md:hidden">
+                <CartWidget />
+              </Link>
+            </div>
+          </ul>
+        </div>
       </nav>
     </div>
   );
