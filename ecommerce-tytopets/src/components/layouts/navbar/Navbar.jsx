@@ -36,7 +36,7 @@ export const Navbar = () => {
         <div
           className={`mt-4 md:mt-0 ${
             isOpen ? "flex" : "hidden"
-          } md:flex md:justify-center`}
+          } md:flex md:justify-center w-full`}
         >
           <ul className="flex flex-col md:flex-row gap-4 font-medium text-base md:items-center">
             <Link to="/category/Alimentos">
@@ -51,15 +51,14 @@ export const Navbar = () => {
             <Link to="/category/CamasyTransportadoras">
               <li>Camas y Transportadoras</li>
             </Link>
-
-            <div className="flex items-center gap-4 w-full justify-center md:justify-end">
-              {/* Carrito en mobile */}
-              <Link to="/cart" className="md:hidden">
-                <CartWidget />
-              </Link>
-            </div>
           </ul>
         </div>
+
+          {/* Carrito en mobile */}
+          <Link to="/cart" className="md:hidden block mt-4 rounded-lg p-2 text-center">
+            <CartWidget />
+          </Link>
+
       </nav>
     </div>
   );
