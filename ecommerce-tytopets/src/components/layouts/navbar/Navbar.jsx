@@ -54,11 +54,13 @@ export const Navbar = () => {
           </ul>
         </div>
 
-          {/* Carrito en mobile */}
-          <Link to="/cart" className="md:hidden block mt-4 rounded-lg p-2 text-center">
-            <CartWidget />
-          </Link>
-
+        {/* Carrito en mobile */}
+        <Link
+          to="/cart"
+          className="md:hidden block mt-4 rounded-lg p-2 text-center"
+        >
+          <CartWidget />
+        </Link>
       </nav>
     </div>
   );
