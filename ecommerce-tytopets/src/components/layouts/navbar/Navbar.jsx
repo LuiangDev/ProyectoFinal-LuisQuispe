@@ -38,17 +38,17 @@ export const Navbar = () => {
             isOpen ? "flex" : "hidden"
           } md:flex md:justify-center w-full`}
         >
-          <ul className="flex flex-col md:flex-row gap-4 font-medium text-base md:items-center">
-            <Link to="/category/Alimentos">
+          <ul className="flex flex-col md:flex-row gap-4 font-medium text-base md:items-center md:space-x-6 ">
+            <Link to="/category/Alimentos" className="pb-4">
               <li>Alimentos</li>
             </Link>
-            <Link to="/category/Accesorios">
+            <Link to="/category/Accesorios" className="pb-4">
               <li>Accesorios</li>
             </Link>
-            <Link to="/category/Higiene">
+            <Link to="/category/Higiene" className="pb-4">
               <li>Higiene</li>
             </Link>
-            <Link to="/category/CamasyTransportadoras">
+            <Link to="/category/CamasyTransportadoras" className="pb-4">
               <li>Camas y Transportadoras</li>
             </Link>
           </ul>
