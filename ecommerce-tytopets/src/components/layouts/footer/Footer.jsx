@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -36,7 +37,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-2">Mi Cuenta</h3>
             <ul className="space-y-1">
-              <li>Iniciar Sesión</li>
+              <Link to="/login" >Iniciar Sesión</Link>
               <li>Mi carrito</li>
               <li>Mis pedidos</li>
             </ul>
