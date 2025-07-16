@@ -7,6 +7,7 @@ import { ItemListContainer } from "./components/pages/itemlistcontainer/ItemList
 import { BrowserRouter, Routes, Route } from "react-router";
 import { CartContextProvider } from "./context/CartContext";
 import Login from "./components/pages/Login";
+import Register from "./components/pages/Register";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/itemDetail/:id" element={<ItemDetail />} />
         <Route path="/category/:name" element={<ItemListContainer />} />
         <Route path="/cart" element={<Cart />} />
