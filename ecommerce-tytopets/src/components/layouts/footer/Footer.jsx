@@ -28,9 +28,9 @@ export const Footer = () => {
             <h3 className="font-semibold mb-2">Categorías</h3>
             <ul className="space-y-1">
               <li>Alimentos</li>
-              <li>Juguetes</li>
+              <li>Accesorios</li>
               <li>Higiene</li>
-              <li>Ropa y accesorios</li>
+              <li>Camas y Transportadoras</li>
             </ul>
           </div>
 
