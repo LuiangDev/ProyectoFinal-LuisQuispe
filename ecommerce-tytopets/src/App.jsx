@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { CartContextProvider } from "./context/CartContext";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
+import { FAQSection } from "./components/pages/FAQSection";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/faq" element={<FAQSection />} />
         <Route path="/itemDetail/:id" element={<ItemDetail />} />
         <Route path="/category/:name" element={<ItemListContainer />} />
         <Route path="/cart" element={<Cart />} />

@@ -29,7 +29,7 @@ export const ItemListContainer = () => {
   }, [name]);
 
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center pb-8 ">
       <div className="w-full">
         <Hero />
       </div>

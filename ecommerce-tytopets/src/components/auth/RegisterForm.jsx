@@ -130,6 +130,7 @@ const RegisterForm = () => {
       >
         Registrarse
       </button>
+
     </form>
   );
 };
