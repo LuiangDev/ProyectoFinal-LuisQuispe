@@ -16,8 +16,8 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-2">Atención al Cliente</h3>
             <ul className="space-y-1">
-              <Link to="/faq">Preguntas Frecuentes</Link>
-              <li>Envíos y devoluciones</li>
+              <Link to="/faq"><li>Preguntas Frecuentes</li></Link>
+              <Link to="/shipping"><li>Envíos y devoluciones</li></Link>
               <li>Seguimiento de pedidos</li>
               <li>Métodos de pago</li>
             </ul>
