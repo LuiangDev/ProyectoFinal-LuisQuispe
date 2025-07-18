@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { ProductCard } from "../../common/productcard/ProductCard";
 import { useParams } from "react-router";
-import { Hero } from "../hero/Hero";
 import { db } from "../../../firebaseConfig";
 
 import { collection, getDocs, query, where } from "firebase/firestore";
@@ -30,9 +29,6 @@ export const ItemListContainer = () => {
 
   return (
     <div className="flex flex-col items-center justify-center pb-8 ">
-      <div className="w-full">
-        <Hero />
-      </div>
       <h2 className="font-bold text-2xl text-cyan-700 my-4 py-4">
         Listado de productos
       </h2>

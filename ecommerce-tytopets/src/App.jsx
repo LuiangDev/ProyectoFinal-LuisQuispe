@@ -9,6 +9,7 @@ import { CartContextProvider } from "./context/CartContext";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import { FAQSection } from "./components/pages/FAQSection";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
     <CartContextProvider>
       <Navbar />
       <Routes>
-        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/faq" element={<FAQSection />} />
