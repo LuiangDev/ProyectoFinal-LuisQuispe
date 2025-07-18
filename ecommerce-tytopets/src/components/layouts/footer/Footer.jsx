@@ -5,7 +5,6 @@ export const Footer = () => {
   return (
     <footer className="bg-sky-900 text-white px-6 py-8 rounded-t-3xl">
       <div className="flex flex-col md:flex-row justify-between gap-6">
-
         {/* Marca */}
         <div className="flex-1">
           <h2 className="font-bold text-xl mb-2">TyTo Pets</h2>
@@ -27,17 +26,25 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-2">Categorías</h3>
             <ul className="space-y-1">
-              <li>Alimentos</li>
-              <li>Accesorios</li>
-              <li>Higiene</li>
-              <li>Camas y Transportadoras</li>
+              <Link to="/category/Alimentos">
+                <li>Alimentos</li>
+              </Link>
+              <Link to="/category/Accesorios">
+                <li>Accesorios</li>
+              </Link>
+              <Link to="/category/Higiene">
+                <li>Higiene</li>
+              </Link>
+              <Link to="/category/CamasyTransportadoras">
+                <li>Camas y Transportadoras</li>
+              </Link>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-2">Mi Cuenta</h3>
             <ul className="space-y-1">
-              <Link to="/login" >Iniciar Sesión</Link>
+              <Link to="/login">Iniciar Sesión</Link>
               <li>Mi carrito</li>
               <li>Mis pedidos</li>
             </ul>
@@ -48,9 +55,15 @@ export const Footer = () => {
         <div className="flex-1 flex flex-col items-center">
           <h3 className="font-semibold mb-2">Mis Redes Sociales</h3>
           <div className="flex gap-4">
-            <div className="rounded-full bg-amber-400 p-2 cursor-pointer"><FaLinkedinIn /></div>
-            <div className="rounded-full bg-amber-400 p-2 cursor-pointer"><FaFacebookF /></div>
-            <div className="rounded-full bg-amber-400 p-2 cursor-pointer"><FaInstagram /></div>
+            <div className="rounded-full bg-amber-400 p-2 cursor-pointer">
+              <FaLinkedinIn />
+            </div>
+            <div className="rounded-full bg-amber-400 p-2 cursor-pointer">
+              <FaFacebookF />
+            </div>
+            <div className="rounded-full bg-amber-400 p-2 cursor-pointer">
+              <FaInstagram />
+            </div>
           </div>
         </div>
       </div>
