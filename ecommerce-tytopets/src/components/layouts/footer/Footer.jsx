@@ -19,7 +19,7 @@ export const Footer = () => {
               <Link to="/faq"><li>Preguntas Frecuentes</li></Link>
               <Link to="/shipping"><li>Envíos y devoluciones</li></Link>
               <li>Seguimiento de pedidos</li>
-              <li>Métodos de pago</li>
+              <Link to="/payment"><li>Métodos de pago</li></Link>
             </ul>
           </div>
 
