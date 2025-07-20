@@ -44,8 +44,8 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-2">Mi Cuenta</h3>
             <ul className="space-y-1">
-              <Link to="/login">Iniciar Sesión</Link>
-              <li>Mi carrito</li>
+              <Link to="/login"><li>Iniciar Sesión</li></Link>
+              <Link to="/micarrito" ><li>Mi carrito</li></Link>
               <li>Mis pedidos</li>
             </ul>
           </div>

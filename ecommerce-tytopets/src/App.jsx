@@ -13,6 +13,7 @@ import Home from "./components/pages/Home";
 import ShippingReturns from "./components/pages/ShippingReturns";
 import { SeguimientoPedidosMascotas } from "./components/pages/SeguimientoPedidosMascotas";
 import PaymentMethods from "./components/pages/PaymentMethods";
+import { MiCarrito } from "./components/pages/MiCarrito";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/shipping" element={<ShippingReturns />} />
         <Route path="/seguimiento" element={<SeguimientoPedidosMascotas />} />
+        <Route path="/micarrito" element={<MiCarrito />} />
         <Route path="/payment" element={<PaymentMethods />} />
         <Route path="/faq" element={<FAQSection />} />
         <Route path="/itemDetail/:id" element={<ItemDetail />} />
