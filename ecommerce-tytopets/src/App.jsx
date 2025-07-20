@@ -11,6 +11,7 @@ import Register from "./components/pages/Register";
 import { FAQSection } from "./components/pages/FAQSection";
 import Home from "./components/pages/Home";
 import ShippingReturns from "./components/pages/ShippingReturns";
+import { SeguimientoPedidosMascotas } from "./components/pages/SeguimientoPedidosMascotas";
 import PaymentMethods from "./components/pages/PaymentMethods";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/shipping" element={<ShippingReturns />} />
+        <Route path="/seguimiento" element={<SeguimientoPedidosMascotas />} />
         <Route path="/payment" element={<PaymentMethods />} />
         <Route path="/faq" element={<FAQSection />} />
         <Route path="/itemDetail/:id" element={<ItemDetail />} />
