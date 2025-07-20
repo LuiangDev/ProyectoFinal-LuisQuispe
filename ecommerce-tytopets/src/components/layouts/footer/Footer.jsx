@@ -18,7 +18,7 @@ export const Footer = () => {
             <ul className="space-y-1">
               <Link to="/faq"><li>Preguntas Frecuentes</li></Link>
               <Link to="/shipping"><li>Envíos y devoluciones</li></Link>
-              <li>Seguimiento de pedidos</li>
+              <Link to="/seguimiento"><li>Seguimiento de pedidos</li></Link>
               <Link to="/payment"><li>Métodos de pago</li></Link>
             </ul>
           </div>
