@@ -14,6 +14,7 @@ import ShippingReturns from "./components/pages/ShippingReturns";
 import { SeguimientoPedidosMascotas } from "./components/pages/SeguimientoPedidosMascotas";
 import PaymentMethods from "./components/pages/PaymentMethods";
 import { MiCarrito } from "./components/pages/MiCarrito";
+import MisPedidos from "./components/pages/MisPedidos";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/shipping" element={<ShippingReturns />} />
         <Route path="/seguimiento" element={<SeguimientoPedidosMascotas />} />
         <Route path="/micarrito" element={<MiCarrito />} />
+        <Route path="/mispedidos" element={<MisPedidos />} />
         <Route path="/payment" element={<PaymentMethods />} />
         <Route path="/faq" element={<FAQSection />} />
         <Route path="/itemDetail/:id" element={<ItemDetail />} />

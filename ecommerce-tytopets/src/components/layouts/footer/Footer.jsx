@@ -46,7 +46,7 @@ export const Footer = () => {
             <ul className="space-y-1">
               <Link to="/login"><li>Iniciar Sesión</li></Link>
               <Link to="/micarrito" ><li>Mi carrito</li></Link>
-              <li>Mis pedidos</li>
+              <Link to="/mispedidos"><li>Mis pedidos</li></Link>
             </ul>
           </div>
         </div>
