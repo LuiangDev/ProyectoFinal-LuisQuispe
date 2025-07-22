@@ -15,6 +15,7 @@ import { SeguimientoPedidosMascotas } from "./components/pages/SeguimientoPedido
 import PaymentMethods from "./components/pages/PaymentMethods";
 import { MiCarrito } from "./components/pages/MiCarrito";
 import MisPedidos from "./components/pages/MisPedidos";
+import ResetPassword from "./components/auth/ResetPassword";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<ResetPassword />} />
         <Route path="/shipping" element={<ShippingReturns />} />
         <Route path="/seguimiento" element={<SeguimientoPedidosMascotas />} />
         <Route path="/micarrito" element={<MiCarrito />} />

@@ -60,7 +60,7 @@ const LoginForm = () => {
 
         <div className="text-left text-sm text-gray-600">
           ¿Olvidaste tu contraseña?{" "}
-          <a href="/reset-password" className="text-blue-600 hover:underline">
+          <a href="/resetpassword" className="text-blue-600 hover:underline">
             Restablecer
           </a>
         </div>
