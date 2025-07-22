@@ -16,7 +16,6 @@ const LoginForm = () => {
 
   const handleSubmit = (values) => {
     console.log("Datos enviados:", values);
-    // Aquí va la lógica de login (auth + redirección)
   };
 
   return (
@@ -67,7 +66,7 @@ const LoginForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
+          className="w-full bg-blue-600 cursor-pointer text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
         >
           Ingresar
         </button>
