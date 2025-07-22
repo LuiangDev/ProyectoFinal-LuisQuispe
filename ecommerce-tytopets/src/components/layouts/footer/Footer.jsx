@@ -55,15 +55,18 @@ export const Footer = () => {
         <div className="flex-1 flex flex-col items-center">
           <h3 className="font-semibold mb-2">Mis Redes Sociales</h3>
           <div className="flex gap-4">
-            <div className="rounded-full bg-amber-400 p-2 cursor-pointer">
+            <Link to="https://www.linkedin.com/in/tyto-pets" target="_blank" rel="noopener noreferrer" className="rounded-full bg-amber-400 p-2 cursor-pointer">
               <FaLinkedinIn />
-            </div>
-            <div className="rounded-full bg-amber-400 p-2 cursor-pointer">
+            </Link>
+
+            <Link to="https://www.facebook.com/tyto.pets" target="_blank" rel="noopener noreferrer" className="rounded-full bg-amber-400 p-2 cursor-pointer">
               <FaFacebookF />
-            </div>
-            <div className="rounded-full bg-amber-400 p-2 cursor-pointer">
+            </Link>
+
+            <Link to="https://www.instagram.com/tyto.pets" target="_blank" rel="noopener noreferrer" className="rounded-full bg-amber-400 p-2 cursor-pointer">
               <FaInstagram />
-            </div>
+            </Link>
+
           </div>
         </div>
       </div>
