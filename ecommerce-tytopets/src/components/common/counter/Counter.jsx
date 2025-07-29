@@ -24,11 +24,11 @@ const Counter = ({ item }) => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px", padding: "20px" }}>
-      <button className=" text-2xl cursor-pointer" style={{padding:"3px"}} onClick={restar}>-</button>
-      <h2 className="font-semibold">{contador}</h2>
-      <button className=" text-2xl cursor-pointer" style={{padding:"3px"}} onClick={sumar}>+</button>
-      <button className="font-semibold cursor-pointer bg-amber-400 text-white rounded-xl" style={{padding:"8px"}} onClick={onAdd}>Agregar al carrito</button>
+    <div className="flex items-center justify-center gap-4 mb-4 text-sky-900">
+      <button className=" text-2xl cursor-pointer font-semibold" onClick={restar}>-</button>
+      <h2 className="font-semibold text-black">{contador}</h2>
+      <button className=" text-2xl cursor-pointer font-semibold" onClick={sumar}>+</button>
+      <button className="font-semibold cursor-pointer px-4 py-2 bg-amber-400 text-white rounded-xl"  onClick={onAdd}>Agregar al carrito</button>
     </div>
   );
 };
