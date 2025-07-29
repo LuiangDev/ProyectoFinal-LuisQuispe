@@ -32,7 +32,7 @@ export const FAQSection = () => {
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-10 text-primary">Preguntas Frecuentes</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-sky-900">Preguntas Frecuentes</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div
