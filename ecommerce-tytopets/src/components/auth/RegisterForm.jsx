@@ -48,7 +48,7 @@ const RegisterForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.username}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-900 focus:border-sky-900 sm:text-sm"
         />
         {formik.touched.username && formik.errors.username ? (
           <div className="text-red-600 text-xs mt-1">
@@ -71,7 +71,7 @@ const RegisterForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-900 focus:border-sky-900 sm:text-sm"
         />
         {formik.touched.email && formik.errors.email ? (
           <div className="text-red-600 text-xs mt-1">{formik.errors.email}</div>
@@ -92,7 +92,7 @@ const RegisterForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.password}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-900 focus:border-sky-900 sm:text-sm"
         />
         {formik.touched.password && formik.errors.password ? (
           <div className="text-red-600 text-xs mt-1">
@@ -115,7 +115,7 @@ const RegisterForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.confirmPassword}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-900 focus:border-sky-900 sm:text-sm"
         />
         {formik.touched.confirmPassword && formik.errors.confirmPassword ? (
           <div className="text-red-600 text-xs mt-1">
@@ -126,14 +126,14 @@ const RegisterForm = () => {
 
       <button
         type="submit"
-        className="w-full flex justify-center cursor-pointer py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        className="w-full flex justify-center cursor-pointer py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-900 hover:bg-sky-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900"
       >
         Registrarse
       </button>
 
       <div className="text-center text-sm text-gray-600">
         ¿Ya tienes una cuenta?{" "}
-        <a href="/login" className="text-blue-600 hover:underline">
+        <a href="/login" className="text-sky-900 hover:underline">
           Iniciar sesión
         </a>
       </div>

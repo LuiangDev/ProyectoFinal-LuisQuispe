@@ -40,7 +40,7 @@ export const SeguimientoPedidosMascotas = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">📦 Seguimiento de tus pedidos</h2>
+      <h2 className="text-3xl font-bold text-sky-900 mb-6">📦 Seguimiento de tus pedidos</h2>
 
       <p className="mb-4 text-gray-600">Consulta el estado de tus productos para tu mascota 🐾</p>
 

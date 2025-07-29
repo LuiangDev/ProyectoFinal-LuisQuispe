@@ -37,7 +37,7 @@ export const MiCarrito = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">🛒 Mi Carrito</h2>
+      <h2 className="text-3xl font-bold mb-6 text-sky-900">🛒 Mi Carrito</h2>
 
       {carrito.length === 0 ? (
         <p className="text-gray-600">Tu carrito está vacío. 🐶 Agrega productos para continuar.</p>

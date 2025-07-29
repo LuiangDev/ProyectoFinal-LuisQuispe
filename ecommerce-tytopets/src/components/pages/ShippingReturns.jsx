@@ -3,7 +3,7 @@ import React from "react";
 const ShippingReturns = () => {
   return (
     <section className="max-w-4xl mx-auto px-4 py-10">
-      <h2 className="text-3xl font-bold mb-6 text-primary">Envíos y Devoluciones</h2>
+      <h2 className="text-3xl font-bold mb-6 text-sky-900">Envíos y Devoluciones</h2>
 
       {/* Sección de Envíos */}
       <div className="bg-white rounded-xl shadow p-6 mb-6 border border-gray-200">

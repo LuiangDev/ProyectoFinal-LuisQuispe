@@ -30,7 +30,7 @@ const PaymentMethods = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-      <h2 className="text-2xl font-bold text-center mb-6 text-primary">Selecciona tu Medio de Pago</h2>
+      <h2 className="text-2xl font-bold text-center mb-6 text-sky-900">Selecciona tu Medio de Pago</h2>
       <div className="grid gap-4">
         {paymentOptions.map((method) => (
           <div

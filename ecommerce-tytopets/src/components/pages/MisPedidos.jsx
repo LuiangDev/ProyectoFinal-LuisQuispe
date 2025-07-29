@@ -25,7 +25,7 @@ const pedidos = [
 const MisPedidos = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-primary">Mis pedidos</h2>
+      <h2 className="text-3xl font-bold mb-6 text-sky-900">Mis pedidos</h2>
 
       {pedidos.length === 0 ? (
         <p className="text-gray-500">No has realizado pedidos aún.</p>
