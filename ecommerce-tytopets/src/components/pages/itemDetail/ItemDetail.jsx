@@ -24,7 +24,7 @@ const ItemDetail = () => {
   return (
     <div className="flex flex-col items-center justify-center mx-auto py-2">
       <h1 className="text-3xl text-cyan-700 font-bold gap-4 py-4" >{item.title}</h1>
-      <img src={item.imageUrl} alt="" className="max-w-sm my-6 border-1 rounded-3xl shadow-2xl"/>
+      <img src={item.imageUrl} alt="" className="max-w-sm my-6 border-1 border-gray-300 rounded-3xl shadow-2xl"/>
       <Counter item={item} />
     </div>
   );

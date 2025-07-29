@@ -24,7 +24,7 @@ const Counter = ({ item }) => {
   };
 
   return (
-    <div className="flex items-center justify-center gap-4 mb-4 text-sky-900">
+    <div className="flex items-center justify-center gap-4 m-4 text-sky-900">
       <button className=" text-2xl cursor-pointer font-semibold" onClick={restar}>-</button>
       <h2 className="font-semibold text-black">{contador}</h2>
       <button className=" text-2xl cursor-pointer font-semibold" onClick={sumar}>+</button>
