@@ -6,7 +6,7 @@ const productosIniciales = [
     nombre: 'Croquetas para Perro Adulto',
     precio: 45.90,
     cantidad: 2,
-    imagen: 'https://i.imgur.com/jy6AyzP.png', // Cambia por tus URLs reales
+    imagen: 'https://i.imgur.com/jy6AyzP.png',
   },
   {
     id: '2',
