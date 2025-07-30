@@ -29,7 +29,7 @@ export const ItemListContainer = () => {
 
   return (
     <div className="flex flex-col items-center justify-center pb-8 ">
-      <h2 className="font-bold text-2xl text-cyan-700 my-4 py-4">
+      <h2 className="font-bold text-4xl text-cyan-700 my-4 py-4">
         Listado de productos
       </h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 px-2">
