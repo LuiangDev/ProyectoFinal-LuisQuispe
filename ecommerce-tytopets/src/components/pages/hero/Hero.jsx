@@ -50,9 +50,9 @@ export const Hero = () => {
           }}
         >
           <div className={`h-full w-full bg-black/40 flex flex-col items-center justify-center text-center p-6`}>
-            <h1 className="text-4xl font-bold text-white drop-shadow-md">{slide.title}</h1>
-            <p className="text-lg text-white mt-2 drop-shadow-md">{slide.description}</p>
-            <button className="mt-4 px-6 py-2 bg-white text-gray-800 rounded-lg hover:bg-gray-200 transition">
+            <h1 className="text-6xl font-bold text-white drop-shadow-md">{slide.title}</h1>
+            <p className="text-xl text-white mt-2 drop-shadow-md">{slide.description}</p>
+            <button className="mt-4 px-6 py-2 bg-cyan-700 cursor-pointer text-white rounded-lg hover:bg-cyan-800transition">
               {slide.button}
             </button>
           </div>
