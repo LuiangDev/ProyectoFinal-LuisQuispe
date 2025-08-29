@@ -29,13 +29,13 @@ const ResetPassword = () => {
           <div className="text-center text-black font-normal">
             ✅ Tu contraseña ha sido restablecida con éxito.
             <div className="mt-6">
-            <Link
-              type="submit"
+              <Link
+                type="submit"
                 to="/login"
-              className="w-full bg-sky-900 text-white cursor-pointer py-2 px-4 rounded-md transition duration-300"
-            >
-              Iniciar sesión
-            </Link>
+                className="w-full bg-sky-900 text-white cursor-pointer py-2 px-4 rounded-md transition duration-300"
+              >
+                Iniciar sesión
+              </Link>
             </div>
           </div>
         ) : (
