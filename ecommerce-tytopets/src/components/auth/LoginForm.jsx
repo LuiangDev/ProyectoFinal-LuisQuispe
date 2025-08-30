@@ -32,7 +32,7 @@ const LoginForm = () => {
           <Field
             name="email"
             type="email"
-            className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
           />
           <ErrorMessage
             name="email"
@@ -48,7 +48,7 @@ const LoginForm = () => {
           <Field
             name="password"
             type="password"
-            className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
           />
           <ErrorMessage
             name="password"
@@ -59,7 +59,7 @@ const LoginForm = () => {
 
         <div className="text-left text-sm text-gray-600">
           ¿Olvidaste tu contraseña?{" "}
-          <a href="/resetpassword" className="text-blue-600 hover:underline">
+          <a href="/resetpassword" className="text-cyan-700 font-semibold hover:underline">
             Restablecer
           </a>
         </div>
@@ -73,7 +73,7 @@ const LoginForm = () => {
 
         <div className="text-center text-sm text-gray-600">
           ¿No tienes cuenta?{" "}
-          <a href="/register" className="text-blue-600 hover:underline">
+          <a href="/register" className="text-cyan-700 font-semibold hover:underline">
             Regístrate
           </a>
         </div>
