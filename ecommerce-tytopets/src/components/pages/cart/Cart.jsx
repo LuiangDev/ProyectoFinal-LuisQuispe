@@ -12,7 +12,7 @@ export const Cart = () => {
 
   return (
 
-    <div className="flex flex-col items-center justify-center gap-4 p-4 mx-auto my-4 bg-white rounded-lg shadow-md max-w-2xl">
+    <div className="flex flex-col items-center justify-center gap-4 border border-gray-200 p-4 mx-auto my-8 bg-white rounded-lg shadow-md max-w-2xl">
       <h1 className="text-xl font-bold">Resumen de Compra</h1>
       <div>
         {cart.map((product) => {
