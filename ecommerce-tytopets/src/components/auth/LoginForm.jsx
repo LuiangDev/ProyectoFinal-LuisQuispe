@@ -1,21 +1,21 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 const LoginForm = () => {
   const initialValues = {
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   };
 
   const validationSchema = Yup.object({
-    email: Yup.string().email("Correo inválido").required("Campo obligatorio"),
+    email: Yup.string().email('Correo inválido').required('Campo obligatorio'),
     password: Yup.string()
-      .min(6, "Mínimo 6 caracteres")
-      .required("Campo obligatorio"),
+      .min(6, 'Mínimo 6 caracteres')
+      .required('Campo obligatorio'),
   });
 
   const handleSubmit = (values) => {
-    console.log("Datos enviados:", values);
+    console.log('Datos enviados:', values);
   };
 
   return (
@@ -58,22 +58,28 @@ const LoginForm = () => {
         </div>
 
         <div className="text-left text-sm text-gray-600">
-          ¿Olvidaste tu contraseña?{" "}
-          <a href="/resetpassword" className="text-cyan-700 font-semibold hover:underline">
+          ¿Olvidaste tu contraseña?{' '}
+          <a
+            href="/resetpassword"
+            className="text-cyan-700 font-semibold hover:underline"
+          >
             Restablecer
           </a>
         </div>
 
         <button
           type="submit"
-          className="w-full bg-sky-900 cursor-pointer text-white py-2 rounded-lg hover:bg-sky-950 transition-colors"
+          className="w-full bg-cyan-700 cursor-pointer text-white py-2 rounded-lg hover:bg-sky-950 transition-colors"
         >
           Ingresar
         </button>
 
         <div className="text-center text-sm text-gray-600">
-          ¿No tienes cuenta?{" "}
-          <a href="/register" className="text-cyan-700 font-semibold hover:underline">
+          ¿No tienes cuenta?{' '}
+          <a
+            href="/register"
+            className="text-cyan-700 font-semibold hover:underline"
+          >
             Regístrate
           </a>
         </div>

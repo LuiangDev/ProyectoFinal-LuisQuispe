@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ResetPassword = () => {
-  const [password, setPassword] = useState("");
-  const [confirm, setConfirm] = useState("");
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (password !== confirm) {
-      alert("⚠️ Las contraseñas no coinciden.");
+      alert('⚠️ Las contraseñas no coinciden.');
       return;
     }
 
-    console.log("Restableciendo contraseña:", password);
+    console.log('Restableciendo contraseña:', password);
     setSuccess(true);
   };
 
@@ -32,7 +32,7 @@ const ResetPassword = () => {
               <Link
                 type="submit"
                 to="/login"
-                className="w-full bg-sky-900 text-white cursor-pointer py-2 px-4 rounded-md transition duration-300"
+                className="w-full bg-cyan-700 text-white cursor-pointer py-2 px-4 rounded-md transition duration-300"
               >
                 Iniciar sesión
               </Link>
@@ -68,7 +68,7 @@ const ResetPassword = () => {
 
             <button
               type="submit"
-              className="w-full bg-sky-900 text-white cursor-pointer py-2 px-4 rounded-md transition duration-300"
+              className="w-full bg-cyan-700 text-white cursor-pointer py-2 px-4 rounded-md transition duration-300"
             >
               Restablecer contraseña
             </button>

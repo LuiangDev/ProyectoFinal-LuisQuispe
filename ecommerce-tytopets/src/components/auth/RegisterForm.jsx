@@ -1,34 +1,34 @@
-import React from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup";
+import React from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const RegisterForm = () => {
   const formik = useFormik({
     initialValues: {
-      username: "",
-      email: "",
-      password: "",
-      confirmPassword: "",
+      username: '',
+      email: '',
+      password: '',
+      confirmPassword: '',
     },
     validationSchema: Yup.object({
       username: Yup.string()
-        .min(3, "El nombre de usuario debe tener al menos 3 caracteres")
-        .max(15, "El nombre de usuario no puede exceder los 15 caracteres")
-        .required("El nombre de usuario es obligatorio"),
+        .min(3, 'El nombre de usuario debe tener al menos 3 caracteres')
+        .max(15, 'El nombre de usuario no puede exceder los 15 caracteres')
+        .required('El nombre de usuario es obligatorio'),
       email: Yup.string()
-        .email("Correo electrónico inválido")
-        .required("El correo electrónico es obligatorio"),
+        .email('Correo electrónico inválido')
+        .required('El correo electrónico es obligatorio'),
       password: Yup.string()
-        .min(6, "La contraseña debe tener al menos 6 caracteres")
-        .required("La contraseña es obligatoria"),
+        .min(6, 'La contraseña debe tener al menos 6 caracteres')
+        .required('La contraseña es obligatoria'),
       confirmPassword: Yup.string()
-        .oneOf([Yup.ref("password"), null], "Las contraseñas no coinciden")
-        .required("Confirmar contraseña es obligatorio"),
+        .oneOf([Yup.ref('password'), null], 'Las contraseñas no coinciden')
+        .required('Confirmar contraseña es obligatorio'),
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
 
-      console.log("Datos de registro:", values);
+      console.log('Datos de registro:', values);
     },
   });
 
@@ -126,14 +126,17 @@ const RegisterForm = () => {
 
       <button
         type="submit"
-        className="w-full flex justify-center cursor-pointer py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-900 hover:bg-sky-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900"
+        className="w-full flex justify-center cursor-pointer py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-cyan-700 hover:bg-sky-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900"
       >
         Registrarse
       </button>
 
       <div className="text-center text-sm text-gray-600">
-        ¿Ya tienes una cuenta?{" "}
-        <a href="/login" className="text-cyan-700 font-semibold text-base hover:underline">
+        ¿Ya tienes una cuenta?{' '}
+        <a
+          href="/login"
+          className="text-cyan-700 font-semibold text-base hover:underline"
+        >
           Iniciar sesión
         </a>
       </div>
