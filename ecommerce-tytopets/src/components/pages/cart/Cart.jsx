@@ -33,7 +33,7 @@ export const Cart = () => {
         className="px-6 py-1 ml-6 bg-cyan-700 text-white font-semibold rounded-2xl cursor-pointer"
         onClick={resetCart}
       >
-        Vaciar Carrito
+        Limpiar Carrito
       </button>
       <Link
         to="/checkout"
